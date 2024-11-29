@@ -2,13 +2,11 @@
 #include "../PPOISlaba1/LongInt.h"
 #include "../PPOISlaba1/LongInt.cpp"
 
-// Тест конструктора по умолчанию
 TEST(ConstructorTEST, DefaultConstructor) {
     DInt a;
     EXPECT_EQ(a.to_string(), "0");
 }
 
-// Тест конструктора из строки
 TEST(ConstructorTEST, StringConstructor) {
     DInt a("12345");
     EXPECT_EQ(a.to_string(), "12345");
@@ -20,7 +18,6 @@ TEST(ConstructorTEST, StringConstructor) {
     EXPECT_EQ(c.to_string(), "123");
 }
 
-// Тест конструктора из числа
 TEST(ConstructorTEST, NumberConstructor) {
     DInt a(12345);
     EXPECT_EQ(a.to_string(), "12345");
@@ -32,7 +29,6 @@ TEST(ConstructorTEST, NumberConstructor) {
     EXPECT_EQ(c.to_string(), "0");
 }
 
-// Тест оператора сложения
 TEST(OperatorTEST, Addition) {
     DInt a("12345");
     DInt b("54321");
@@ -43,9 +39,13 @@ TEST(OperatorTEST, Addition) {
 
     DInt d("-54321");
     EXPECT_EQ((c + d).to_string(), "-66666");
+
+    b += 5679;
+    EXPECT_EQ((b).to_string(), "60000");
+
+    EXPECT_EQ((a + 5).to_string(), "12350");
 }
 
-// Тест оператора вычитания
 TEST(OperatorTEST, Subtraction) {
     DInt a("54321");
     DInt b("12345");
@@ -53,9 +53,17 @@ TEST(OperatorTEST, Subtraction) {
 
     DInt c("-12345");
     EXPECT_EQ((a - c).to_string(), "66666");
+
+    a -= 4321;
+    EXPECT_EQ((a).to_string(), "50000");
+
+    EXPECT_EQ((a - 1000).to_string(), "49000");
+
+    DInt e("100000000000000000000000000000000000000000000000000000000000000000000000");
+    DInt f("99999999999999999999999999999999999999999999999999999999999999999999999");
+    EXPECT_EQ((e - f).to_string(), "1");
 }
 
-// Тест оператора умножения
 TEST(OperatorTEST, Multiplication) {
     DInt a("123");
     DInt b("456");
@@ -66,9 +74,13 @@ TEST(OperatorTEST, Multiplication) {
 
     DInt d("-456");
     EXPECT_EQ((c * d).to_string(), "56088");
+
+    c *= -3;
+    EXPECT_EQ((c).to_string(), "369");
+
+    EXPECT_EQ((a * 1000).to_string(), "123000");
 }
 
-// Тест оператора деления
 TEST(OperatorTEST, Division) {
     DInt a("56088");
     DInt b("123");
@@ -80,11 +92,14 @@ TEST(OperatorTEST, Division) {
     DInt d("-123");
     EXPECT_EQ((c / d).to_string(), "456");
 
-    // Тест деления на 0 (ожидаем исключение)
+    d /= d;
+    EXPECT_EQ((d).to_string(), "1");
+
+    EXPECT_EQ((b / 3).to_string(), "41");
+
     EXPECT_THROW(a / DInt("0"), std::overflow_error);
 }
 
-// Тест операторов сравнения
 TEST(OperatorTEST, Comparison) {
     DInt a("12345");
     DInt b("54321");
@@ -99,7 +114,6 @@ TEST(OperatorTEST, Comparison) {
     EXPECT_TRUE(a != c);
 }
 
-// Тест метода abs()
 TEST(MethodTEST, AbsoluteValue) {
     DInt a("-12345");
     EXPECT_EQ(a.abs().to_string(), "12345");
@@ -111,7 +125,6 @@ TEST(MethodTEST, AbsoluteValue) {
     EXPECT_EQ(c.abs().to_string(), "0");
 }
 
-// Тест инкремента и декремента
 TEST(OperatorTEST, IncrementDecrement) {
     DInt a("12345");
     EXPECT_EQ((++a).to_string(), "12346");
@@ -124,7 +137,6 @@ TEST(OperatorTEST, IncrementDecrement) {
     EXPECT_EQ(b.to_string(), "-12347");
 }
 
-// Тест сложных выражений
 TEST(OperatorTEST, ComplexExpressions) {
     DInt a("123");
     DInt b("456");
