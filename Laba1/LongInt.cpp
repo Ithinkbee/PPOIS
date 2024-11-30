@@ -2,12 +2,12 @@
 #include <algorithm>
 #include <sstream>
 
-DInt::DInt() {
+LongInt::LongInt() {
 	digits.push_back(0);
 	sign = true;
 }
 
-DInt::DInt(std::string number) {
+LongInt::LongInt(std::string number) {
 	int pos = isdigit(number.at(0)) ? 0 : 1;
 	sign = number.at(0) == '-' ? false : true;
 	for (unsigned int i = pos; i < number.length(); i++)
@@ -15,21 +15,21 @@ DInt::DInt(std::string number) {
 	ignoreZeros();
 }
 
-DInt::DInt(long long number)
-	: DInt(std::to_string(number)) {
+LongInt::LongInt(long long number)
+	: LongInt(std::to_string(number)) {
 }
 
-DInt::DInt(const DInt& rhs) {
+LongInt::LongInt(const LongInt& rhs) {
 	sign = rhs.sign;
 	digits = rhs.digits;
 }
 
-void DInt::ignoreZeros() {
+void LongInt::ignoreZeros() {
 	while (digits.size() > 1 && digits.at(0) == 0)
 		digits.erase(digits.begin(), digits.begin() + 1);
 }
 
-std::string DInt::to_string() const {
+std::string LongInt::to_string() const {
 	std::string str;
 	if (!sign)
 		str += "-";
@@ -38,7 +38,7 @@ std::string DInt::to_string() const {
 	return str;
 }
 
-DInt& DInt::operator=(const DInt& rhs) {
+LongInt& LongInt::operator=(const LongInt& rhs) {
 	if (this == &rhs)
 		return *this;
 	sign = rhs.sign;
@@ -46,7 +46,7 @@ DInt& DInt::operator=(const DInt& rhs) {
 	return *this;
 }
 
-bool DInt::operator>(const DInt& rhs) const {
+bool LongInt::operator>(const LongInt& rhs) const {
 	if (sign == true && rhs.sign == false)
 		return true;
 	if (sign == false && rhs.sign == true)
@@ -65,38 +65,38 @@ bool DInt::operator>(const DInt& rhs) const {
 	return false;
 }
 
-bool DInt::operator<(const DInt& rhs) const {
+bool LongInt::operator<(const LongInt& rhs) const {
 	return false == (*this == rhs) && false == (*this > rhs);
 }
 
-bool DInt::operator<=(const DInt& rhs) const {
+bool LongInt::operator<=(const LongInt& rhs) const {
 	return false == (*this > rhs);
 }
 
-bool DInt::operator==(const DInt& rhs) const {
+bool LongInt::operator==(const LongInt& rhs) const {
 	return (sign == rhs.sign && digits == rhs.digits);
 }
 
-bool DInt::operator>=(const DInt& rhs) const {
+bool LongInt::operator>=(const LongInt& rhs) const {
 	return false == (*this < rhs);
 }
 
-bool DInt::operator!=(const DInt& rhs) const {
+bool LongInt::operator!=(const LongInt& rhs) const {
 	return false == (*this == rhs);
 }
 
-DInt DInt::abs() const {
-	DInt a(*this);
+LongInt LongInt::abs() const {
+	LongInt a(*this);
 	a.sign = true;
 	return a;
 }
 
-int DInt::digit(int index) const {
+int LongInt::digit(int index) const {
 	return index >= 0 ? digits[index] : 0;
 }
 
-const DInt DInt::operator+(const DInt& rhs) const {
-	DInt sum;
+const LongInt LongInt::operator+(const LongInt& rhs) const {
+	LongInt sum;
 	if (digits.at(0) == 0 && rhs.digits.at(0) == 0)
 		return sum;
 
@@ -139,17 +139,17 @@ const DInt DInt::operator+(const DInt& rhs) const {
 	return sum;
 }
 
-const DInt DInt::operator-(const DInt& rhs) const {
-	DInt neg_rhs = rhs;
+const LongInt LongInt::operator-(const LongInt& rhs) const {
+	LongInt neg_rhs = rhs;
 	neg_rhs.sign = !neg_rhs.sign;
 
-	DInt diff = *this + neg_rhs;
+	LongInt diff = *this + neg_rhs;
 
 	return diff;
 }
 
-DInt DInt::digitMult(unsigned int digit) const {
-	DInt result;
+LongInt LongInt::digitMult(unsigned int digit) const {
+	LongInt result;
 	result.digits.clear();
 	result.sign = true;
 	unsigned int carry = 0;
@@ -169,9 +169,9 @@ DInt DInt::digitMult(unsigned int digit) const {
 	return result;
 }
 
-const DInt DInt::operator*(const DInt& rhs) const {
-	DInt product;
-	DInt psum;
+const LongInt LongInt::operator*(const LongInt& rhs) const {
+	LongInt product;
+	LongInt psum;
 	unsigned int zeros_to_insert = 0;
 	for (int i = rhs.digits.size() - 1; i >= 0; i--) {
 		unsigned int digit = rhs.digits.at(i);
@@ -184,13 +184,13 @@ const DInt DInt::operator*(const DInt& rhs) const {
 	return psum;
 }
 
-const DInt DInt::operator/(const DInt& rhs) const {
-	DInt buffer;
-	DInt result;
-	DInt rhsAbs = rhs.abs();
+const LongInt LongInt::operator/(const LongInt& rhs) const {
+	LongInt buffer;
+	LongInt result;
+	LongInt rhsAbs = rhs.abs();
 	result.digits.clear();
 	buffer.digits.clear();
-	if (rhs == DInt(0))
+	if (rhs == LongInt(0))
 		throw std::overflow_error("Divide by zero exception");
 	for (size_t i = 0; i < digits.size(); ++i) {
 		buffer.digits.push_back(digits[i]);
@@ -212,45 +212,45 @@ const DInt DInt::operator/(const DInt& rhs) const {
 	return result;
 }
 
-DInt& DInt::operator+=(const DInt& rhs) {
+LongInt& LongInt::operator+=(const LongInt& rhs) {
 	*this = *this + rhs;
 	return *this;
 }
 
-DInt& DInt::operator-=(const DInt& rhs) {
+LongInt& LongInt::operator-=(const LongInt& rhs) {
 	*this = *this - rhs;
 	return *this;
 }
 
-DInt& DInt::operator*=(const DInt& rhs) {
+LongInt& LongInt::operator*=(const LongInt& rhs) {
 	*this = *this * rhs;
 	return *this;
 }
 
-DInt& DInt::operator/=(const DInt& rhs) {
+LongInt& LongInt::operator/=(const LongInt& rhs) {
 	*this = *this / rhs;
 	return *this;
 }
 
-DInt& DInt::operator++() {
-	*this += DInt(1);
+LongInt& LongInt::operator++() {
+	*this += LongInt(1);
 	return *this;
 }
 
-DInt DInt::operator++(int)
+LongInt LongInt::operator++(int)
 {
-	DInt temp(*this);
-	*this += DInt(1);
+	LongInt temp(*this);
+	*this += LongInt(1);
 	return temp;
 }
 
-DInt& DInt::operator--() {
-	*this -= DInt(1);
+LongInt& LongInt::operator--() {
+	*this -= LongInt(1);
 	return *this;
 }
 
-DInt DInt::operator--(int) {
-	DInt temp(*this);
-	*this -= DInt(1);
+LongInt LongInt::operator--(int) {
+	LongInt temp(*this);
+	*this -= LongInt(1);
 	return temp;
 }
