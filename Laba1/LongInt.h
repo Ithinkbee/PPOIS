@@ -6,40 +6,39 @@
 #include <vector>
 #include <iostream>
 
-class DInt {
+class LongInt {
 private:
 	void ignoreZeros();
-	DInt digitMult(unsigned int digit) const;
+	LongInt digitMult(unsigned int digit) const;
 	int digit(int index) const;
 	std::vector<unsigned int> digits;
 	bool sign;
 public:
-	DInt();
-	DInt(std::string number);
-	DInt(long long number);
-	DInt(const DInt& rhs);
-	DInt& operator=(const DInt& rhs);
-	bool operator>(const DInt& rhs) const;
-	bool operator<(const DInt& rhs) const;
-	bool operator==(const DInt& rhs) const;
-	bool operator>=(const DInt& rhs) const;
-	bool operator<=(const DInt& rhs) const;
-	bool operator!=(const DInt& rhs) const;
-	const DInt operator+(const DInt& rhs) const;
-
-	const DInt operator-(const DInt& rhs) const;
-	const DInt operator*(const DInt& rhs) const;
-	const DInt operator/(const DInt& rhs) const;
-	DInt& operator+=(const DInt& rhs);
-	DInt& operator-=(const DInt& rhs);
-	DInt& operator*=(const DInt& rhs);
-	DInt& operator/=(const DInt& rhs);
-	DInt& operator++();
-	DInt operator++(int);
-	DInt& operator--();
-	DInt operator--(int);
+	LongInt();
+	LongInt(std::string number);
+	LongInt(long long number);
+	LongInt(const LongInt& rhs);
+	LongInt& operator=(const LongInt& rhs);
+	bool operator>(const LongInt& rhs) const;
+	bool operator<(const LongInt& rhs) const;
+	bool operator==(const LongInt& rhs) const;
+	bool operator>=(const LongInt& rhs) const;
+	bool operator<=(const LongInt& rhs) const;
+	bool operator!=(const LongInt& rhs) const;
+	const LongInt operator+(const LongInt& rhs) const;
+	const LongInt operator-(const LongInt& rhs) const;
+	const LongInt operator*(const LongInt& rhs) const;
+	const LongInt operator/(const LongInt& rhs) const;
+	LongInt& operator+=(const LongInt& rhs);
+	LongInt& operator-=(const LongInt& rhs);
+	LongInt& operator*=(const LongInt& rhs);
+	LongInt& operator/=(const LongInt& rhs);
+	LongInt& operator++();
+	LongInt operator++(int);
+	LongInt& operator--();
+	LongInt operator--(int);
 	std::string to_string() const;
-	DInt abs() const;
+	LongInt abs() const;
 };
 
 #endif
