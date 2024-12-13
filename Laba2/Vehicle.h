@@ -12,6 +12,7 @@ private:
 	double range;
 	double speed;
 public:
+	//Тип транспорта; Скорость; Вместимость; Дальность
 	Vehicle(string vehicleType, double vehicleSpeed, double vehicleCapacity, double vehicleRange)
 		: type(vehicleType), speed(vehicleSpeed), capacity(vehicleCapacity), range(vehicleRange) {};
 	void printInfo();

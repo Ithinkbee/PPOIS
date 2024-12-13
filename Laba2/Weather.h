@@ -13,17 +13,12 @@ private:
 public:
     Weather(double temp = 20.0, double precip = 0.0, double wind = 0.0)
         : temperature(temp), precipitation(precip), windSpeed(wind) {}
-
-    double getTemperature() const { return temperature; }
-    void setTemperature(double temp) { temperature = temp; }
-
-    double getPrecipitation() const { return precipitation; }
-    void setPrecipitation(double precip) { precipitation = precip; }
-
-    double getWindSpeed() const { return windSpeed; }
-    void setWindSpeed(double wind) { windSpeed = wind; }
-
+    double getTemperature() const;
+    void setTemperature(double temp);
+    double getPrecipitation() const;
+    void setPrecipitation(double precip);
+    double getWindSpeed() const;
+    void setWindSpeed(double wind);
     double calculatePriceImpact(double basePrice) const;
-
     void printWeather() const;
 };

@@ -18,3 +18,21 @@ void Weather::printWeather() const {
     cout << "Осадки: " << precipitation << " мм" << endl;
     cout << "Скорость ветра: " << windSpeed << " м/с" << endl;
 }
+double Weather::getTemperature() const { 
+    return temperature;
+}
+void Weather::setTemperature(double temp) {
+    temperature = temp;
+}
+double Weather::getPrecipitation() const {
+    return precipitation;
+}
+void Weather::setPrecipitation(double precip) {
+    precipitation = precip;
+}
+double Weather::getWindSpeed() const {
+    return windSpeed;
+}
+void Weather::setWindSpeed(double wind) {
+    windSpeed = wind;
+}
