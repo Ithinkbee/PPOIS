@@ -63,3 +63,32 @@ TEST(OrderTest, SetPayment) {
     EXPECT_EQ(order.getPayment().getMethod(), PaymentMethod::Online);
     EXPECT_DOUBLE_EQ(order.getPayment().getAmount(), 250.0);
 }
+
+TEST(OrderTest, PrintInfoOutput) {
+    setlocale(LC_ALL, "Russian");
+    Payment payment(PaymentMethod::Cash, 500);
+
+    Order order(1, 500.0, 10.0, "Легковой автомобиль", payment);
+
+    std::stringstream output;
+    std::streambuf* oldCoutBuffer = std::cout.rdbuf(output.rdbuf());
+
+    order.printInfo();
+
+    std::cout.rdbuf(oldCoutBuffer);
+
+    std::string expectedOutput =
+        "----------------------------------------\n"
+        "Информация о заказе:\n"
+        "Номер заказа: 1\n"
+        "Сумма заказа: 500 руб.\n"
+        "Расстояние до клиента: 10 км.\n"
+        "Тип доставки: Легковой автомобиль\n"
+        "----------------------------------------\n"
+        "Способ оплаты: Наличные\n"
+        "Сумма: 500.00 руб.\n"
+        "Оплачено сразу: Нет\n"
+        "----------------------------------------\n";
+
+    EXPECT_EQ(output.str(), expectedOutput);
+}

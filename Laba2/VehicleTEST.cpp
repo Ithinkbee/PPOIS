@@ -8,33 +8,13 @@
 #include "../PPOISlaba2/OnFoot.h"
 #include <sstream>
 
-class VehicleTest : public ::testing::Test {
-protected:
-    Vehicle vehicle{ "Car", 120.0, 500.0, 400.0 };
-};
+TEST(VehicleTest, GetMethods) {
+    Vehicle vehicle("Легковой автомобиль", 80.0, 200.0, 20.0);
 
-TEST_F(VehicleTest, ConstructorAndGetterTest) {
-    EXPECT_EQ(vehicle.getType(), "Car");
-    EXPECT_DOUBLE_EQ(vehicle.getSpeed(), 120.0);
-    EXPECT_DOUBLE_EQ(vehicle.getCapacity(), 500.0);
-    EXPECT_DOUBLE_EQ(vehicle.getRange(), 400.0);
-}
-
-TEST_F(VehicleTest, PrintInfoTest) {
-    ostringstream output;
-    streambuf* oldCout = cout.rdbuf(output.rdbuf());
-
-    vehicle.printInfo();
-
-    cout.rdbuf(oldCout);
-
-    string expectedOutput =
-        "Способ доставки: Car\n"
-        "Вместимость (в цене): 500\n"
-        "Допустимое расстояние до клиента: 400\n"
-        "Скорость: 120\n";
-
-    EXPECT_EQ(output.str(), expectedOutput);
+    EXPECT_EQ(vehicle.getType(), "Легковой автомобиль");
+    EXPECT_DOUBLE_EQ(vehicle.getCapacity(), 200.0);
+    EXPECT_DOUBLE_EQ(vehicle.getRange(), 20.0);
+    EXPECT_DOUBLE_EQ(vehicle.getSpeed(), 80.0);
 }
 
 TEST(MinibusTest, Initialization) {

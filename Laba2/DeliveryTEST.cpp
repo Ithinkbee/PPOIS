@@ -78,3 +78,31 @@ TEST(DeliveryTest, CompleteDeliverySuccess) {
     EXPECT_GE(bank.getMoney(), 6200); //с максимальной скидкой
     EXPECT_LE(bank.getMoney(), 6425); //с минимальной скидкой
 }
+
+TEST(DeliveryTest, PrintAvailableVehicles) {
+    Bank bank;
+    Weather weather(15.0, 5.0, 10.0);
+    vector<Vehicle*> vehicles = { new Minibus(), new Car(), new Motorcycle() };
+    Delivery delivery(vehicles, &bank, weather);
+
+    ostringstream output;
+    streambuf* oldCout = cout.rdbuf(output.rdbuf());
+    delivery.printAvailableVehicles();
+    cout.rdbuf(oldCout);
+
+    string expectedOutput =
+        "Доступные транспортные средства:\n"
+        "Способ доставки: Микроавтобус\n"
+        "Вместимость (в цене): 5000\n"
+        "Допустимое расстояние до клиента: 20\n"
+        "Скорость: 60\n\n"
+        "Способ доставки: Легковой автомобиль\n"
+        "Вместимость (в цене): 2000\n"
+        "Допустимое расстояние до клиента: 20\n"
+        "Скорость: 75\n\n"
+        "Способ доставки: Мотоцикл\n"
+        "Вместимость (в цене): 700\n"
+        "Допустимое расстояние до клиента: 10\n"
+        "Скорость: 90\n\n";
+    EXPECT_EQ(output.str(), expectedOutput);
+}
