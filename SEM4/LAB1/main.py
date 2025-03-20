@@ -8,8 +8,6 @@ from broker import Broker
 from trader import Trader
 from trading_platform import TradingPlatform
 
-#нужно залить код на гит, сделать отчёт
-
 def main() -> None:
     def create_platform(name: str) -> TradingPlatform:
         exchange = Exchange()
