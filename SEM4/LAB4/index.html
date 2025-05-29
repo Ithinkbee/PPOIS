@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trading Platform</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+    <h1>Trading Platform</h1>
+
+    <div class="main-container">
+        <div class="settings-container">
+            <div class="current-settings">
+                <h2>Current Settings</h2>
+                <p><strong>Platform:</strong> <span id="current-platform-display">Platform 1</span></p>
+                <p><strong>Broker:</strong> <span id="current-broker-display">B1 (1% commission)</span></p>
+                <button id="show-settings-panel" class="settings-button">Settings</button>
+            </div>
+        </div>
+
+        <div class="button-grid">
+            <a href="/market_data" class="big-button">Market Data</a>
+            <a href="#" id="show-order-form" class="big-button">Place Order</a>
+            <a href="/trader_report/T1" class="big-button">Trader T1 Report</a>
+            <a href="/trader_report/T2" class="big-button">Trader T2 Report</a>
+        </div>
+    </div>
+
+    <div id="order-form" style="display: none;">
+        <h2>Place Order</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="trader_id">Trader:</label>
+                <select id="trader_id" name="trader_id" required>
+                    <option value="T1">Trader 1</option>
+                    <option value="T2">Trader 2</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="order_type">Order Type:</label>
+                <select id="order_type" name="order_type" required>
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symbol">Symbol (e.g. USD, GOOGL):</label>
+                <input type="text" id="symbol" name="symbol" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" step="0.01" min="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01" min="0.01" required>
+            </div>
+
+            <div class="commission-notice">
+                Current broker commission: <span id="current-commission">1%</span>
+            </div>
+
+            <button type="submit">Submit Order</button>
+            <button type="button" id="cancel-order">Cancel</button>
+        </form>
+    </div>
+
+    <div id="settings-panel" style="display: none;">
+        <h2>Change Settings</h2>
+        <div class="form-group">
+            <label for="platform-select">Select Platform:</label>
+            <select id="platform-select" class="settings-select">
+                <option value="Platform 1">Platform 1 (Default prices)</option>
+                <option value="Platform 2">Platform 2 (Updated prices)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="broker-select">Select Broker:</label>
+            <select id="broker-select" class="settings-select">
+                <option value="B1">B1 (1% commission)</option>
+                <option value="B2">B2 (2% commission)</option>
+            </select>
+        </div>
+
+        <button id="apply-settings" class="settings-button">Apply Changes</button>
+        <button type="button" id="cancel-settings" class="settings-button cancel-button">Cancel</button>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
+
+
+
