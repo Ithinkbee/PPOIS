@@ -1,0 +1,523 @@
+<?xml version="1.0" ?>
+<patients>
+  <patient>
+    <fio>Fedorova Olga Vasilievna</fio>
+    <address>Novosibirsk, Gorky str. 15</address>
+    <birth_date>1982-11-05</birth_date>
+    <admission_date>2024-03-22</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Allergy</conclusion>
+  </patient>
+  <patient>
+    <fio>Mikhailov Sergey Olegovich</fio>
+    <address>Yekaterinburg, Malysheva str. 31</address>
+    <birth_date>1973-07-19</birth_date>
+    <admission_date>2024-03-10</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Bronchitis</conclusion>
+  </patient>
+  <patient>
+    <fio>Nikolaeva Tatiana Ivanovna</fio>
+    <address>Samara, Kuibysheva str. 42</address>
+    <birth_date>1992-09-14</birth_date>
+    <admission_date>2024-03-25</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Migraine</conclusion>
+  </patient>
+  <patient>
+    <fio>Orlov Dmitry Sergeevich</fio>
+    <address>Rostov-on-Don, Bolshaya Sadovaya str. 10</address>
+    <birth_date>1988-12-03</birth_date>
+    <admission_date>2024-03-17</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Gastritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Pavlova Anna Alexandrovna</fio>
+    <address>Ufa, Lenina str. 5</address>
+    <birth_date>1975-05-28</birth_date>
+    <admission_date>2024-03-19</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Arthritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Romanov Pavel Viktorovich</fio>
+    <address>Krasnoyarsk, Mira pr. 15</address>
+    <birth_date>1998-01-22</birth_date>
+    <admission_date>2024-03-21</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>ORVI</conclusion>
+  </patient>
+  <patient>
+    <fio>Sokolova Irina Petrovna</fio>
+    <address>Voronezh, Plekhanovskaya str. 8</address>
+    <birth_date>1980-10-17</birth_date>
+    <admission_date>2024-03-16</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Healthy</conclusion>
+  </patient>
+  <patient>
+    <fio>Borisov Alexey Dmitrievich</fio>
+    <address>Perm, Komsomolsky pr. 20</address>
+    <birth_date>1971-03-08</birth_date>
+    <admission_date>2024-03-24</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Pneumonia</conclusion>
+  </patient>
+  <patient>
+    <fio>Zaitseva Marina Olegovna</fio>
+    <address>Volgograd, Sovetskaya str. 12</address>
+    <birth_date>1993-06-25</birth_date>
+    <admission_date>2024-03-20</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Anemia</conclusion>
+  </patient>
+  <patient>
+    <fio>Karpov Vitaly Igorevich</fio>
+    <address>Krasnodar, Krasnaya str. 32</address>
+    <birth_date>1987-04-11</birth_date>
+    <admission_date>2024-03-23</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Hypertension</conclusion>
+  </patient>
+  <patient>
+    <fio>Guseva Ekaterina Sergeevna</fio>
+    <address>Saransk, Bolshevistskaya str. 7</address>
+    <birth_date>1979-08-09</birth_date>
+    <admission_date>2024-03-18</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Diabetes</conclusion>
+  </patient>
+  <patient>
+    <fio>Lebedev Artem Vladimirovich</fio>
+    <address>Tolyatti, Mira str. 50</address>
+    <birth_date>1996-02-14</birth_date>
+    <admission_date>2024-03-22</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Allergy</conclusion>
+  </patient>
+  <patient>
+    <fio>Vinogradova Svetlana Mikhailovna</fio>
+    <address>Tyumen, Respubliki str. 15</address>
+    <birth_date>1984-07-30</birth_date>
+    <admission_date>2024-03-19</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Bronchitis</conclusion>
+  </patient>
+  <patient>
+    <fio>Krylov Denis Petrovich</fio>
+    <address>Izhevsk, Pushkinskaya str. 18</address>
+    <birth_date>1976-11-21</birth_date>
+    <admission_date>2024-03-21</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Migraine</conclusion>
+  </patient>
+  <patient>
+    <fio>Morozova Natalia Andreevna</fio>
+    <address>Barnaul, Lenina pr. 25</address>
+    <birth_date>1991-05-17</birth_date>
+    <admission_date>2024-03-17</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Gastritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Egorov Maxim Olegovich</fio>
+    <address>Ulyanovsk, Goncharova str. 10</address>
+    <birth_date>1983-09-12</birth_date>
+    <admission_date>2024-03-20</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Arthritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Polyakova Vera Nikolaevna</fio>
+    <address>Irkutsk, Karl Marx str. 5</address>
+    <birth_date>1974-12-28</birth_date>
+    <admission_date>2024-03-24</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>ORVI</conclusion>
+  </patient>
+  <patient>
+    <fio>Filippov Igor Vasilievich</fio>
+    <address>Yaroslavl, Svobody str. 8</address>
+    <birth_date>1989-01-05</birth_date>
+    <admission_date>2024-03-16</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Healthy</conclusion>
+  </patient>
+  <patient>
+    <fio>Komarova Lyubov Alexandrovna</fio>
+    <address>Khabarovsk, Muravyova-Amurskogo str. 15</address>
+    <birth_date>1977-04-19</birth_date>
+    <admission_date>2024-03-23</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Pneumonia</conclusion>
+  </patient>
+  <patient>
+    <fio>Golubev Vadim Sergeevich</fio>
+    <address>Vladivostok, Svetlanskaya str. 22</address>
+    <birth_date>1994-08-07</birth_date>
+    <admission_date>2024-03-18</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Anemia</conclusion>
+  </patient>
+  <patient>
+    <fio>Kovaleva Anastasia Dmitrievna</fio>
+    <address>Omsk, Lenina str. 10</address>
+    <birth_date>1981-10-31</birth_date>
+    <admission_date>2024-03-22</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Hypertension</conclusion>
+  </patient>
+  <patient>
+    <fio>Belov Stanislav Igorevich</fio>
+    <address>Chelyabinsk, Zwillinga str. 5</address>
+    <birth_date>1972-06-13</birth_date>
+    <admission_date>2024-03-19</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Diabetes</conclusion>
+  </patient>
+  <patient>
+    <fio>Davydova Elena Vladimirovna</fio>
+    <address>Ryazan, Svobody str. 35</address>
+    <birth_date>1997-03-26</birth_date>
+    <admission_date>2024-03-21</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Allergy</conclusion>
+  </patient>
+  <patient>
+    <fio>Medvedev Alexander Petrovich</fio>
+    <address>Lipetsk, Sovetskaya str. 12</address>
+    <birth_date>1986-07-08</birth_date>
+    <admission_date>2024-03-17</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Bronchitis</conclusion>
+  </patient>
+  <patient>
+    <fio>Ershova Olga Sergeevna</fio>
+    <address>Penza, Kirova str. 7</address>
+    <birth_date>1970-09-15</birth_date>
+    <admission_date>2024-03-20</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Migraine</conclusion>
+  </patient>
+  <patient>
+    <fio>Kuzmin Alexey Nikolaevich</fio>
+    <address>Astrakhan, Sovetskaya str. 18</address>
+    <birth_date>1999-12-04</birth_date>
+    <admission_date>2024-03-24</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Gastritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Solovieva Irina Olegovna</fio>
+    <address>Tver, Sovetskaya str. 10</address>
+    <birth_date>1985-02-19</birth_date>
+    <admission_date>2024-03-16</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Arthritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Makarov Denis Viktorovich</fio>
+    <address>Kaliningrad, Leninsky pr. 25</address>
+    <birth_date>1978-05-22</birth_date>
+    <admission_date>2024-03-23</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>ORVI</conclusion>
+  </patient>
+  <patient>
+    <fio>Orlova Tatiana Sergeevna</fio>
+    <address>Bryansk, Lenina str. 5</address>
+    <birth_date>1993-08-11</birth_date>
+    <admission_date>2024-03-18</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Healthy</conclusion>
+  </patient>
+  <patient>
+    <fio>Grigoriev Pavel Alexandrovich</fio>
+    <address>Stavropol, Dzerzhinskogo str. 12</address>
+    <birth_date>1982-11-30</birth_date>
+    <admission_date>2024-03-22</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Pneumonia</conclusion>
+  </patient>
+  <patient>
+    <fio>Belyaeva Maria Ivanovna</fio>
+    <address>Belgorod, Sobornaya str. 8</address>
+    <birth_date>1975-04-17</birth_date>
+    <admission_date>2024-03-19</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Anemia</conclusion>
+  </patient>
+  <patient>
+    <fio>Korneev Dmitry Olegovich</fio>
+    <address>Arkhangelsk, Voskresenskaya str. 15</address>
+    <birth_date>1990-07-25</birth_date>
+    <admission_date>2024-03-21</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Hypertension</conclusion>
+  </patient>
+  <patient>
+    <fio>Romanova Anna Petrovna</fio>
+    <address>Kursk, Lenina str. 10</address>
+    <birth_date>1987-10-08</birth_date>
+    <admission_date>2024-03-17</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Diabetes</conclusion>
+  </patient>
+  <patient>
+    <fio>Gorshkov Andrey Vladimirovich</fio>
+    <address>Ivanovo, Engelsa str. 5</address>
+    <birth_date>1973-01-14</birth_date>
+    <admission_date>2024-03-20</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Allergy</conclusion>
+  </patient>
+  <patient>
+    <fio>Lapina Ekaterina Dmitrievna</fio>
+    <address>Smolensk, Lenina str. 2</address>
+    <birth_date>1996-06-29</birth_date>
+    <admission_date>2024-03-24</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Bronchitis</conclusion>
+  </patient>
+  <patient>
+    <fio>Kulikov Sergey Igorevich</fio>
+    <address>Murmansk, Lenina pr. 30</address>
+    <birth_date>1984-03-12</birth_date>
+    <admission_date>2024-03-16</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Migraine</conclusion>
+  </patient>
+  <patient>
+    <fio>Zimina Valentina Sergeevna</fio>
+    <address>Vladimir, Bolshaya Moskovskaya str. 8</address>
+    <birth_date>1979-12-07</birth_date>
+    <admission_date>2024-03-23</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Gastritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Fadeev Artem Nikolaevich</fio>
+    <address>Chita, Babushkina str. 15</address>
+    <birth_date>1991-09-18</birth_date>
+    <admission_date>2024-03-18</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Arthritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Mironova Svetlana Olegovna</fio>
+    <address>Tula, Sovetskaya str. 10</address>
+    <birth_date>1988-04-21</birth_date>
+    <admission_date>2024-03-22</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>ORVI</conclusion>
+  </patient>
+  <patient>
+    <fio>Kazakov Vladimir Petrovich</fio>
+    <address>Kaluga, Lenina str. 5</address>
+    <birth_date>1976-07-30</birth_date>
+    <admission_date>2024-03-19</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Healthy</conclusion>
+  </patient>
+  <patient>
+    <fio>Savina Elena Viktorovna</fio>
+    <address>Kostroma, Sovetskaya str. 12</address>
+    <birth_date>1995-02-13</birth_date>
+    <admission_date>2024-03-21</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Pneumonia</conclusion>
+  </patient>
+  <patient>
+    <fio>Gromov Mikhail Sergeevich</fio>
+    <address>Yoshkar-Ola, Lenina str. 15</address>
+    <birth_date>1983-11-26</birth_date>
+    <admission_date>2024-03-17</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Anemia</conclusion>
+  </patient>
+  <patient>
+    <fio>Kiseleva Natalia Andreevna</fio>
+    <address>Ryazan, Svobody str. 20</address>
+    <birth_date>1974-08-09</birth_date>
+    <admission_date>2024-03-20</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Hypertension</conclusion>
+  </patient>
+  <patient>
+    <fio>Novikov Dmitry Olegovich</fio>
+    <address>Ulan-Ude, Lenina str. 25</address>
+    <birth_date>1998-05-14</birth_date>
+    <admission_date>2024-03-24</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Diabetes</conclusion>
+  </patient>
+  <patient>
+    <fio>Sorokina Irina Vladimirovna</fio>
+    <address>Magnitogorsk, Pravdy str. 8</address>
+    <birth_date>1989-12-03</birth_date>
+    <admission_date>2024-03-16</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Allergy</conclusion>
+  </patient>
+  <patient>
+    <fio>Tarasov Andrey Nikolaevich</fio>
+    <address>Sochi, Navaginskaya str. 10</address>
+    <birth_date>1977-03-28</birth_date>
+    <admission_date>2024-03-23</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Bronchitis</conclusion>
+  </patient>
+  <patient>
+    <fio>Baranova Olga Sergeevna</fio>
+    <address>Volzhsky, Mira str. 15</address>
+    <birth_date>1992-10-11</birth_date>
+    <admission_date>2024-03-18</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Migraine</conclusion>
+  </patient>
+  <patient>
+    <fio>Vlasov Pavel Igorevich</fio>
+    <address>Nizhnekamsk, Khimikov pr. 20</address>
+    <birth_date>1981-06-22</birth_date>
+    <admission_date>2024-03-22</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Gastritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Gavrilova Elena Alexandrovna</fio>
+    <address>Dzerzhinsk, Dzerzhinskogo str. 5</address>
+    <birth_date>1970-09-05</birth_date>
+    <admission_date>2024-03-19</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Arthritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Zhukov Vitaly Petrovich</fio>
+    <address>Orsk, Sovetskaya str. 12</address>
+    <birth_date>1994-04-18</birth_date>
+    <admission_date>2024-03-21</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>ORVI</conclusion>
+  </patient>
+  <patient>
+    <fio>Kudryavtseva Marina Olegovna</fio>
+    <address>Nizhny Tagil, Lenina pr. 25</address>
+    <birth_date>1986-01-27</birth_date>
+    <admission_date>2024-03-17</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Healthy</conclusion>
+  </patient>
+  <patient>
+    <fio>Yakovlev Alexey Dmitrievich</fio>
+    <address>Stary Oskol, Mikrorayon 8</address>
+    <birth_date>1979-07-14</birth_date>
+    <admission_date>2024-03-20</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Pneumonia</conclusion>
+  </patient>
+  <patient>
+    <fio>Voronova Svetlana Viktorovna</fio>
+    <address>Balashikha, Entuziastov sh. 10</address>
+    <birth_date>1997-12-09</birth_date>
+    <admission_date>2024-03-24</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Anemia</conclusion>
+  </patient>
+  <patient>
+    <fio>Klimov Denis Sergeevich</fio>
+    <address>Podolsk, Kirova str. 8</address>
+    <birth_date>1985-03-16</birth_date>
+    <admission_date>2024-03-16</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Hypertension</conclusion>
+  </patient>
+  <patient>
+    <fio>Rodionova Anna Nikolaevna</fio>
+    <address>Korolyov, Tsiolkovskogo str. 5</address>
+    <birth_date>1972-10-23</birth_date>
+    <admission_date>2024-03-23</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Diabetes</conclusion>
+  </patient>
+  <patient>
+    <fio>Belov Artem Vladimirovich</fio>
+    <address>Mytishchi, Mira str. 15</address>
+    <birth_date>1991-05-30</birth_date>
+    <admission_date>2024-03-18</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Allergy</conclusion>
+  </patient>
+  <patient>
+    <fio>Guryeva Elena Olegovna</fio>
+    <address>Lyubertsy, Oktyabrsky pr. 20</address>
+    <birth_date>1984-08-12</birth_date>
+    <admission_date>2024-03-22</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Bronchitis</conclusion>
+  </patient>
+  <patient>
+    <fio>Kozlovsky Igor Petrovich</fio>
+    <address>Elektrostal, Karl Marx str. 10</address>
+    <birth_date>1977-11-05</birth_date>
+    <admission_date>2024-03-19</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>Migraine</conclusion>
+  </patient>
+  <patient>
+    <fio>Markova Olga Sergeevna</fio>
+    <address>Almetyevsk, Lenina str. 5</address>
+    <birth_date>1993-02-28</birth_date>
+    <admission_date>2024-03-21</admission_date>
+    <doctor>Smirnova Anna Victorovna</doctor>
+    <conclusion>Gastritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Nikitin Sergey Alexandrovich</fio>
+    <address>Odintsovo, Severnaya str. 8</address>
+    <birth_date>1980-09-17</birth_date>
+    <admission_date>2024-03-17</admission_date>
+    <doctor>Kozlov Igor Stepanovich</doctor>
+    <conclusion>Arthritis</conclusion>
+  </patient>
+  <patient>
+    <fio>Osipova Tatiana Dmitrievna</fio>
+    <address>Zhukovsky, Chkalova str. 12</address>
+    <birth_date>1975-06-24</birth_date>
+    <admission_date>2024-03-20</admission_date>
+    <doctor>Pyetrov Pyotr Pyetrovich</doctor>
+    <conclusion>ORVI</conclusion>
+  </patient>
+  <patient>
+    <fio>Halilov Ruslan Elvirovich</fio>
+    <address>Minsk, Rogachevskaya str. 1A</address>
+    <birth_date>2006-04-13</birth_date>
+    <admission_date>2025-03-19</admission_date>
+    <doctor>Melnikov Artyom Ibragimovich</doctor>
+    <conclusion>Healthy</conclusion>
+  </patient>
+  <patient>
+    <fio>Popov Yuliy</fio>
+    <address>Karaganda, Gegenuber str. 12</address>
+    <birth_date>1999-05-05</birth_date>
+    <admission_date>2017-05-05</admission_date>
+    <doctor>Gvozd Anton Cheslavovich</doctor>
+    <conclusion>Shizophrenia</conclusion>
+  </patient>
+  <patient>
+    <fio>Syrnikov Semyon Stanislavovich</fio>
+    <address>Bludenz, Herrengasse 14</address>
+    <birth_date>1985-11-11</birth_date>
+    <admission_date>2025-01-01</admission_date>
+    <doctor>Gvozd Anton Cheslavovich</doctor>
+    <conclusion>Shizophrenia</conclusion>
+  </patient>
+  <patient>
+    <fio>Kotko Pavel Anatolievich</fio>
+    <address>Minsk, 50 years of Victory, 42</address>
+    <birth_date>2005-07-29</birth_date>
+    <admission_date>2026-07-29</admission_date>
+    <doctor>Buzichkov Nikita Fiodorvich</doctor>
+    <conclusion>Venerogical deseases</conclusion>
+  </patient>
+</patients>
